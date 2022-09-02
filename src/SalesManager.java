@@ -15,14 +15,14 @@ public class SalesManager {
         return max;
     }
 
-    public int min() {
-        int min = -1;
+    public long min() {
+        long min = -1;
         if (sales.length>0) {
             min = sales[0];
         }
 
         if (sales.length > 0) {
-            for (int sale : sales) {
+            for (long sale : sales) {
                 if (sale < min) {
                     min = sale;
                 }
@@ -31,14 +31,14 @@ public class SalesManager {
         return min;
     }
 
-    public int croppAverage() {
-        int result = -1;
-        int min = min();
-        int max = max();
+    public long croppAverage() {
+        long result = -1;
+        long min = min();
+        long max = max();
 
-        int summ = 0;
+        long summ = 0;
 
-        for (int sale : sales) {
+        for (long sale : sales) {
             if (sale == max) {
                 continue;
             }
