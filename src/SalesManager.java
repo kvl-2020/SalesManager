@@ -40,9 +40,11 @@ public class SalesManager {
 
         for (long sale : sales) {
             if (sale == max) {
+                max = -1;
                 continue;
             }
             if (sale == min) {
+                min = -1;
                 continue;
             }
             summ += sale;
